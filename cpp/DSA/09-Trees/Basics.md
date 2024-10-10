@@ -1,10 +1,10 @@
 ## Tree
 * Trees are non-linear data structure that used to represent entities in a hierarchial releationship.
 * Its collection of nodes and edges.
---  **Examples**
-* Computer file system (folders, subfolders)
-* Family Tree
-* Table of contents in a book
+* Examples
+    * Computer file system (folders, subfolders)
+    * Family Tree
+    * Table of contents in a book
 
 
 ### Terminology
@@ -20,7 +20,7 @@ Relations between nodes called edges, edge connects two nodes.
 * Topmost node of the tree
 * Node which does not have a parent node.
 
-#### Root
+#### Path
 Sequence of edges leading from one node to another.
 
 #### Parent
@@ -32,13 +32,13 @@ Descendant of any node, is known as child node.
 #### Siblings
 Nodes that belong to the same parent are called siblings.
 
-#### Leaf
+#### External / Leaf
 The node with no child is known as a leaf node. Also called external nodes or terminal nodes.
 
 #### Internal nodes
 Atleast one child node known as internal nodes. Nodes other than leaf nodes.
 
-#### Degree
+#### Degree / Arity
 * Total number of children of a node is called the degree
 * The highest degree of the node among all the nodes in a tree is called the Degree of Tree.
 
@@ -53,9 +53,6 @@ The height of a tree is the length of the longest path from the root of the tree
 
 #### Depth of a node
 Length of the path from the root to that node. 
-
-#### Path
-The sequence of nodes and edges from one node to another node
 
 #### Subtree
 Any node of the tree along with its descendant.
