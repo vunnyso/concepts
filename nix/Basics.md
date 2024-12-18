@@ -66,7 +66,8 @@ $ nix-shell
 ## Nix Flakes
 * Used for managing nix ecosystem including nixos configuration, development environment, derivations and other.
 * Flakes are nix command are experimental feature of Nix.
-* Need to explicity enable them on NixOS
+* Need to explicity enable them on NixOS.
+* Pins versions of dependencies in a lock file.
 ```
 nix.settings.experimental-features = ["nix-command" "flakes"]
 ```

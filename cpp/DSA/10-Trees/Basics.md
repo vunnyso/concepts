@@ -1,5 +1,5 @@
 ## Tree
-* Trees are non-linear data structure that used to represent entities in a hierarchial releationship.
+* Trees are non-linear data structure that used to represent entities in a hierarchical releationship.
 * Its collection of nodes and edges.
 * Examples
     * Computer file system (folders, subfolders)
