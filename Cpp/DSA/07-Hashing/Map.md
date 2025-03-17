@@ -1,66 +1,69 @@
-## unordered_map syntax
-```cpp
-std::unordered_map<key,value> umap;
-```
-
-### Example
-```cpp
-#include <iostream>
-#include <unordered_map>
-
-int main()
-{
-    std::unordered_map<std::string, int> umap;
-    umap["India"] = 91;
-    umap["Finland"] = 358;
-    umap.insert(std::make_pair("Austria", 43));
-    umap.insert(std::make_pair("Belgium", 32));
-
-    for(auto item: umap)
-        std::cout<<item.first <<" " <<item.second << std::endl;
-    return 0;
-}
-```
-
-### Output
-```
-Belgium 32
-Austria 43
-Finland 358
-India 91
-```
------
+## What is the Map?
+* Associate container which stores data in key value format, where key can be of any datastructure and will be unique.
+* Stores unique keys in sorted order.
+* Implemented as balanced binary search tree (Red-Black Tree)
 
 ## map syntax
 ```cpp
-std::map<key,value> umap;
+map<key,value> map;
 ```
+
 ### Example
 ```cpp
-#include <iostream>
-#include <map>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main()
 {
-    std::map<std::string, int> map;
-    map["India"] = 91;
-    map["Finland"] = 358;
-    map["Austria"] = 43;
-    map["Belgium"] = 32;
+   map <int, int> mp1;
+   map <int, pair<int, int>> mp2;
+   map <pair<int, int>, int> mp3;
 
-    for(auto item: map)
-        std::cout<<item.first <<" " <<item.second << std::endl;
-    return 0;
+   mp1[1] = 2;
+   mp2[2] = {2, 3};
+   mp3[{2, 3}] = 10;
+
+   cout << mp1[1] << endl; // Looks for value for specified key
+   cout << mp1[9] << endl; // Print 0 or NULL if cannot find element
+
+   auto itr = mp1.find(1);
+   if (itr != mp1.end())
+      cout << "Value found is " << itr->second << endl;
+    else
+        cout<< "Value not found" << endl;
+
+   for (auto it: mp1){
+     cout << it.first <<" " << it.second << endl;
+   }
+
+   return 0;
 }
 ```
 
-### Output
-```
-Austria 43
-Belgium 32
-Finland 358
-India 91
-```
+
+## Variations
+
+1. **multimap**
+* Syntax
+
+    ```cpp
+    multimap<key,value> map;
+    ```
+
+* Use of multi map
+ We can store duplicate keys but everything will be in sorted order.
+
+
+2. **unordered_map**
+* Syntax
+
+    ```cpp
+    unordered_map<key,value> map;
+    ```
+
+* Use of unordered map
+ Will have unique keys but order will be randomnized.
+
 -----
 
 ## Difference

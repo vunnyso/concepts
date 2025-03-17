@@ -1,4 +1,4 @@
-## What is Queu?
+## What is Queue?
 Stack is datastructure that holds certain type of data which can be char, string or customized data.
 Follows FIFO (First in First Out) mechanism.
 
@@ -11,50 +11,63 @@ Follows FIFO (First in First Out) mechanism.
 
 ### Syntax to declare vector
 ```cpp
- std::queue<dataType> queue;
+ queue<dataType> queue;
 ```
 
 ### 1. Implemenation
 
-- **Using Array**
+- **Basic Program**
    - Size has to known or constant size
 ```cpp
-std::vector<int> vec {10, 20, 30};
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   queue <int> q;
+   q.push(1); // Reuslts in {1}
+   q.emplace(2); // Reuslts in {1, 2}
+   q.back() += 5; // Resulst in {1, 7}
+
+   cout << q.front() << endl; // Outputs 1
+   cout << q.back() << endl; // Outputs 7
+
+   while(!q.empty()) {
+       cout << q.front() <<" ";
+       q.pop();
+   }
+}
 ```
 
-### 2. Iterating through vector
+## 2. Time Complexity
+Most of operations in constant time which is O(1)
 
-- **Using for loop**
+## 3. Deque (Double ended Queue)
+* Provides insertion and deletion for both front and back
 ```cpp
-std::vector<int> vec = {1, 2, 3};
-for(unsigned int i = 0; i < vec.size(); i++)
-    std::cout << vec[i];
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  deque<int> dq;
+  dq.push_front(1);
+  dq.push_front(2);
+  dq.push_back(3);
+  dq.push_back(4);
+  cout<<"Accessing like Index " <<dq.at(3) << endl;
+  while(!dq.empty()) {
+    cout << dq.front() <<" ";
+    dq.pop_front();
+  }
+
+   return 0;
+}
+
 ```
 
-- **Using iterator**
-element in the vector.
-```cpp
-std::vector<int> vec = {1, 2, 3};
-for(vector<int>::iterator itr = vec.begin(); itr < vec.end(); itr++)
-    std::cout << *itr;
-```
-
-- **Using auto keyword**
-```cpp
-std::vector<int> vec = {1, 2, 3};
-for(auto & item: vec)
-    std::cout << item;
-```
-
-### 3. Common functions
-- **Insert element**
-```cpp
-std::vector<int> vec = {1, 2, 3};
-vec.push_back(4);
-```
-
-- **Delete element**
-```cpp
-std::vector<int> vec = {1, 2, 3, 4};
-vec.pop_back();
-```
+## 4. Key Differences
+| Feature | queue | deque |
+| --------|--------|--------|
+| Insertion or Deleteion | Only from front | Front or back| 
+| Random Access | Not possible | using at() |

@@ -11,7 +11,7 @@ Follows LIFO (Last in First Out) mechanism.
 
 ### Syntax to declare vector
 ```cpp
- std::stack<dataType> st;
+ stack<dataType> st;
 ```
 
 ### 1. Initalization
@@ -29,7 +29,7 @@ int main()
     stack<int, vector<int>> st1 (vec);
     cout <<"Top element of stack is " << st1.top() << endl;
 
-    // 2. Initialize using stack
+    // 2. Initialize using vector
     stack<int, vector<int>> st2 (st1);
     cout <<"Top element of stack is " << st2.top() <<endl;
 
@@ -77,3 +77,6 @@ int main()
 }
 
 ```
+
+## 4. Complexity in Stack
+Most of operations in constant time which is O(1)
