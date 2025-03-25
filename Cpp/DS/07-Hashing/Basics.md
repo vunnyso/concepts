@@ -2,7 +2,7 @@
 * Hashing is technique that maps large set of data to small set of data.
 * It uses hash function for doing the mapping and its irreversible process.
 * Its common to encounter collision.
-* Components of hassing are `Key --> Hash Fucntion --> Hash Table`
+* Components of hassing are `Key --> Hash Function --> Hash Table`
 * Each key is translated by hash function into distinct index in array.
 * Examples are URL Shorteneres, country name with code.
 

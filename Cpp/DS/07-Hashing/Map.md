@@ -1,7 +1,7 @@
 ## What is the Map?
 * Associate container which stores data in key value format, where key can be of any datastructure and will be unique.
 * Stores unique keys in sorted order.
-* Implemented as balanced binary search tree (Red-Black Tree)
+* Implemented array of linked list (buckets)
 
 ## map syntax
 ```cpp

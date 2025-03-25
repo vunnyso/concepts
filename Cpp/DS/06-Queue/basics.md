@@ -1,6 +1,7 @@
 ## What is Queue?
-Stack is datastructure that holds certain type of data which can be char, string or customized data.
-Follows FIFO (First in First Out) mechanism.
+* Stack is datastructure that holds certain type of data which can be char, string or customized data.
+* Follows FIFO (First in First Out) mechanism.
+* Insertion operation referred to as enqueue and deletion referred to as dequeue.
 
 ### Most common functions
 1. push()

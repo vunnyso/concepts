@@ -10,6 +10,10 @@
 - Object is instance of class.
 - Helps in code reusbality
 
+### This keyword
+* This pointer is a pointer to current instance of the class.
+* Used when instance variable and local variables are with same name.
+
 ### Encapsulation
 Wrapping varaibles and functions in class. Helps in data hiding.
 
