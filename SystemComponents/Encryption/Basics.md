@@ -52,7 +52,8 @@ Basically of two types of encryption:
 
 * **Elliptic Curve Cryptography (ECC)** <br>
   * Its an asymmetric encryption method that differs from other data encryption techniques because it doesn’t rely on big number problems. Instead, it uses the math of curves.
-  * ECC offers significant advantages, particularly in resource-constrained environments. Unlike traditional methods like RSA encryption, it provides strong security with much shorter key lengths compared to
+  * ECC offers significant advantages, particularly in resource-constrained environments. Unlike traditional methods like RSA encryption, it provides strong security with much shorter key lengths.
+  * Ed25519 is an elliptic curve digital signature algorithm
 
 * **Digital Signature Algorithm (DSA)** <br>
   * DSA creates digital signatures (known as digital seals) with private keys for message authenticity. Recipients use public keys to verify these signatures, ensuring the message’s integrity and source. Unlike RSA encryption, which focuses on confidentiality, DSA concentrates on the integrity and authenticity of data.
