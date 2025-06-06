@@ -1,6 +1,6 @@
 ## Intro
 - In every application there is a default thread which is main()
-- A thread is light weight process. Idea is achieve parallelism by dividing a process .into multiple threads.
+- A thread is light weight process. Idea is achieve parallelism by dividing a process into multiple threads.
 
 
 ### Ways to thread in C++

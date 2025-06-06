@@ -36,7 +36,7 @@ sort(a, a + n, greater<int>); // greater is comparator which help in sorting in 
 ### Return number of set bits in number
 ```cpp
 int num = 7;
-int cnt = __builtin_popcount(); // outputs 3
+int cnt = __builtin_popcount(num); // outputs 3
 ```
 
 ### Find maximum and minimum elements from container

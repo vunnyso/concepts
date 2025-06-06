@@ -17,8 +17,6 @@ b. Zip the Code
 
 ```bash
 zip function.zip lambda_function.py
-
-
 ```
 
 ### 2. Create an IAM Role for Lambda

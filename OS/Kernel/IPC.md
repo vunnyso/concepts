@@ -19,7 +19,7 @@
 * Can be used for two processes on same or different machine.
 * TCP/ UDP sockets across differnt machines
 * Unix sockets on same machine
-* Process opne sokcets and connect them to each other.
+* Process open sokcets and connect them to each other.
 * Message written into one socket can be read from another.
 * OS transfer data across socket buffers
 

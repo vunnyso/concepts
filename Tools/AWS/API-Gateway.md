@@ -7,4 +7,3 @@ aws apigateway create-rest-api --name "MyRestAPI" --description "My REST API usi
 
 ```
 
-### 2. Create an IAM Role for Lambda

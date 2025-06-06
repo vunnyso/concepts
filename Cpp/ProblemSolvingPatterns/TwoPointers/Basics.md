@@ -27,5 +27,8 @@
   * When problem explicitly ask for pair of values which satisfy the condition.
   * Result which can be generated from two values. 
 
+### Examples
+* https://leetcode.com/problem-list/two-pointers/
+
 ### References
  https://www.youtube.com/watch?v=QzZ7nmouLTI

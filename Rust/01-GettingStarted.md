@@ -1,7 +1,9 @@
-<h1 style="text-align:center;"> Rust </p>
+<h1 style="text-align:center;">  Getting started with Rust </p>
 
 ### Features
 * Rust is a modern systems programming language focused on safety, speed, and concurrency.
+* `rustc` is compiler for rust program
+* Use `cargo` which is build system and package manager for big projects which have multiple files.
 
 ### 🦀 Basic program
 ```rust
@@ -30,3 +32,6 @@ fn main() {
    cargo build
    cargo run
    ```
+
+### Reference
+https://www.youtube.com/watch?v=OX9HJsJUDxA&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8

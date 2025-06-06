@@ -24,3 +24,17 @@ Elements are the building blocks of a GStreamer pipeline.
 A pipeline is a collection of elements linked together to process multimedia data.
 
 
+### 🧪 Basic Usage
+
+1. **MP4 video playback**
+   ```sh
+   gst-launch-1.0 filesrc location=file.mp4 ! qtdemux ! h264parse ! vaapih264dec ! vaapisink
+   ```
+
+2. **AV1 video playback**
+   ```sh
+   gst-launch-1.0 filesrc location=CityHall_1920x1080.webm ! matroskademux ! av1parse ! vaapiav1dec ! vaapisink
+   ```
+
+### References:
+https://wiki.nixos.org/wiki/GStreamer 
