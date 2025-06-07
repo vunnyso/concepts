@@ -26,7 +26,7 @@
    ```nix
    mkdir ~/dotfiles
    cd ~/dofiles
-   cp -r /etc/nixos .
+   cp /etc/nixos/* .
    nix flake init
    ```
    #### Note you can keep dotfiles with scm like `git`

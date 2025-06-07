@@ -1,4 +1,4 @@
-# Useful built-in functions of CPP
+<h1 style="text-align:center;"> Useful builtin functions</p>
 
 ### To swap to variables 
 ```cpp

@@ -12,5 +12,5 @@
 
 2. Video decoding
    ```sh
-   ffplay  -hwaccel vaapi -hwaccel_output_fromat vaapi -i /tmp/test.mp4 -f null -
+   ffplay  -hwaccel vaapi -hwaccel_output_format vaapi -i /tmp/test.mp4 -f null -
    ```

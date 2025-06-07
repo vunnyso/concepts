@@ -1,7 +1,13 @@
-## Intro
+<h1 style="text-align:center;"> Threading </p>
+
+### Intro
 - In every application there is a default thread which is main()
 - A thread is light weight process. Idea is achieve parallelism by dividing a process into multiple threads.
 
+### Concurrency
+* Concurrency refers to the ability to process multiple tasks or threads at the same time.
+* It is used to improve the program's performance and response time.
+* It helps in seperation of concerns, example video player cna have 3 threads, one for Audio, Video and GUI.
 
 ### Ways to thread in C++
 1) Function Pointers
@@ -25,18 +31,5 @@
 ### Detach
 - This is used to detach newly created thread from parent thread
 
-
-### Semaphore
-- 
-
-#### If base condition not met it may result in stack overflow as in example below
-```
-void func()
-{
-    std::cout <<"Hello World" << std::endl;
-}
-int main()
-{
-    func()
-}
-```
+### References
+https://www.youtube.com/watch?v=FRBHvbu7q4E&list=PLk6CEY9XxSICcxsEeT3AKAda1cAoQXhGv&index=5

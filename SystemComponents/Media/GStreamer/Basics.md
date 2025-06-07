@@ -10,7 +10,7 @@
 
 Elements are the building blocks of a GStreamer pipeline.
 
-| Element    | Functioanlity   | Examples                   |
+| Element    | Functionality   | Examples                   |
 | --------   | -------         | -------                    |
 | Source     | Generates media | filesrc, audiotestsrc      |
 | Filter     | Modifies media  | audioconvert, videoconvert |

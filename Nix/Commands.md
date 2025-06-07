@@ -19,3 +19,25 @@ Looks for outputs.nixosConfigurations."HOSTNAME"
 ## home-manager
 Builds a home configuration
 Looks for outputs.homeConfigurations."USERNAME"
+
+## nix-env
+Is a command-line tool in the Nix package manager used to install, upgrade, remove, and query packages in a user's environment.
+
+List all packages currently installed in your user environment.
+```sudo nix-env -q
+```
+
+To install the package
+```bash
+sudo nix-env -iA nixpkgs.hello
+```
+
+To Uninstall the package
+```bash
+sudo nix-env -e hello
+```
+
+Upgrade all installed packages.
+```bash
+nix-env -u
+```

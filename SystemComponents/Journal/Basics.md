@@ -19,3 +19,13 @@ journalctl --file=system.journal
 ```sh
 logger -t vunny "This is message from me"
 ```
+
+### Check size of journal on your system
+```sh
+journalctl --disk-usage
+```
+
+### If your journal is too large, you reduce its size
+```sh
+sudo journalctl --vacuum-size=500M
+```

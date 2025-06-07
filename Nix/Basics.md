@@ -1,4 +1,4 @@
-<h1 style="text-align:center;"> Nix Basics</p> 
+<h1 style="text-align:center;"> Nix Basics</p>
 
 ## Nix
 * Nix is a cross-platform package manager and build tool that allows you to manage software packages and their dependencies in a declarative way. 
