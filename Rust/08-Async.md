@@ -1,4 +1,4 @@
-<h1 style="text-align:center;"> Rust Basics </p>
+<h1 style="text-align:center;"> Rust Async </p>
 
 ### 🧰 What is Tokio?
 * Tokio is runtime for writing reliable, asynchronous applications in Rust.
