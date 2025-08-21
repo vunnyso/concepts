@@ -41,3 +41,12 @@ Upgrade all installed packages.
 ```bash
 nix-env -u
 ```
+
+### Find hash of commit
+* For finding sha256 hash
+nix-prefetch-github pop-os cosmic-comp  --rev 3f74a22cca982de708a4ce2138009ec0b4756cd9
+
+* For finding cargo hash
+nix-prefetch cargo \
+  --lockfile ./Cargo.lock \
+  --output-format nix

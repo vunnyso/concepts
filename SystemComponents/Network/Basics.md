@@ -1,7 +1,7 @@
 <h1 style="text-align:center;"> Network Basics</p>
 
 ### 🔧 How to check open port in Linux
-Run the following command:
+Run the `Socket Statistics`:
 ```bash
 $ ss -tuln
 ```
