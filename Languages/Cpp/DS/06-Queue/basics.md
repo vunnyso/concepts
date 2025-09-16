@@ -1,16 +1,18 @@
 ## What is Queue?
-* Stack is datastructure that holds certain type of data which can be char, string or customized data.
-* Follows FIFO (First in First Out) mechanism.
-* Insertion operation referred to as enqueue and deletion referred to as dequeue.
+
+- Stack is datastructure that holds certain type of data which can be char, string or customized data.
+- Follows FIFO (First in First Out) mechanism.
+- Insertion operation referred to as enqueue and deletion referred to as dequeue.
 
 ### Most common functions
+
 1. push()
 2. pop() - Takes last element and delete from stack
-3. top() - Gives Last element 
+3. top() - Gives Last element
 4. size()
 
-
 ### Syntax to declare vector
+
 ```cpp
  queue<dataType> queue;
 ```
@@ -18,7 +20,8 @@
 ### 1. Implemenation
 
 - **Basic Program**
-   - Size has to known or constant size
+  - Size has to known or constant size
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -41,10 +44,13 @@ int main()
 ```
 
 ## 2. Time Complexity
+
 Most of operations in constant time which is O(1)
 
 ## 3. Deque (Double ended Queue)
-* Provides insertion and deletion for both front and back
+
+- Provides insertion and deletion for both front and back
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -68,7 +74,8 @@ int main()
 ```
 
 ## 4. Key Differences
-| Feature | queue | deque |
-| --------|--------|--------|
-| Insertion or Deleteion | Only from front | Front or back| 
-| Random Access | Not possible | using at() |
+
+| Feature                | queue           | deque         |
+| ---------------------- | --------------- | ------------- |
+| Insertion or Deleteion | Only from front | Front or back |
+| Random Access          | Not possible    | using at()    |

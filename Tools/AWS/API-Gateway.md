@@ -6,4 +6,3 @@
 aws apigateway create-rest-api --name "MyRestAPI" --description "My REST API using AWS CLI" --region us-east-1
 
 ```
-

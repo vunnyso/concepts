@@ -1,16 +1,16 @@
 ## Traversal in Tree
-* Traversal in a tree refers to the process of visiting all the nodes in a specific order. There are
-* There are different tree traversal methods
-  * Depth-First Search (DFS) explores as far as possible along a branch before backtracking. There are three types:
-     *  Preorder Traversal (Root → Left → Right)
-     * Inorder Traversal (Left → Root → Right)
-     * Postorder Traversal (Left → Right → Root)
-  * Breadth-First Search (BFS) or Level Order Traversal
-    * Visits nodes level by level, generally uses a queue (FIFO)
 
-
+- Traversal in a tree refers to the process of visiting all the nodes in a specific order. There are
+- There are different tree traversal methods
+  - Depth-First Search (DFS) explores as far as possible along a branch before backtracking. There are three types:
+    - Preorder Traversal (Root → Left → Right)
+    - Inorder Traversal (Left → Root → Right)
+    - Postorder Traversal (Left → Right → Root)
+  - Breadth-First Search (BFS) or Level Order Traversal
+    - Visits nodes level by level, generally uses a queue (FIFO)
 
 ### Sample for DFS traversal
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -78,6 +78,6 @@ int main ()
 
 ```
 
-
 ## Reference:
+
 https://leetcode.com/problems/binary-tree-level-order-traversal/description/

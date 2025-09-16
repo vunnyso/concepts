@@ -1,32 +1,38 @@
 ### Charateristics / Properties
+
 1. Class & Object
 2. Encapsulation
 3. Polymorphism
 4. Inheritance
 
-
 ### Class and object
+
 - Its user defined data type, which holds its own data members and member functions.
 - Object is instance of class.
 - Helps in code reusbality
 
 ### This keyword
-* This pointer is a pointer to current instance of the class.
-* Used when instance variable and local variables are with same name.
+
+- This pointer is a pointer to current instance of the class.
+- Used when instance variable and local variables are with same name.
 
 ### Encapsulation
+
 Wrapping varaibles and functions in class. Helps in data hiding.
 
 ### Polymorphism
+
 Poly means many and morph means forms. basically 2 types
+
 1. Compile Time / Static Binding / Earlt Binding
    a. Function overloading (Same function with different params)
-   b. Operator overloading 
+   b. Operator overloading
 2. Runtime / Dynamic Binding / Lazy Binding
    a. Function overriding using virtual functions
 
 **Syntax**
 Function overloading
+
 ```cpp
 class test {
     public:
@@ -40,8 +46,10 @@ int main(){
     t1.fun(1.1);
 }
 ```
+
 **Syntax**
 Operator overloading (We can achieve this by function as well, but when we have expression better to overload operator)
+
 ```cpp
 class point {
     int x, y;
@@ -68,6 +76,7 @@ int main() {
 
 **Syntax**
 Function override
+
 ```cpp
 class base {
     public: virtual void fun() { cout<<"Base" <<endl; }
@@ -83,47 +92,52 @@ int main() {
 }
 ```
 
-**Note:** 
+**Note:**
+
 1. Virtual function can be accessed using pointer or reference.
-2. Virtual function cannot be static 
+2. Virtual function cannot be static
 3. Pure Virtual function which have no defination and assigned with 0 and that class will be became abstract(not fully constructable)
 4. Virtual table are created for all classes which have one virtual function or classes which are derived from base which has virtual function.
 5. Virtual table will have function pointer and its static arrays. All objects pointer to same vtable.
 
 ### Inheritance
+
 The capability of a class to derive properties and characteristics from another class.
 
 ### Inheritance
-1. Single 
+
+1. Single
 2. Multiple
 3. Multilevel
 4. Hybrid
 5. Hierarchial
 
-
 ### Single Inheritance
+
 If one class is being inherited by another class.
 If you have class A, using properties of A and you are creating an new class B.
 
 A -> B
 
-
 ### Multiple Inheritance
+
 If more than one class is being inherited by another class.
 
 A, B, C -> D
 
 ### Multi level Inheritance
+
 If one class is being inherited by another class and then other class is being inhertied by another class.
 
 A -> B -> C
 
 ### Hierarchial level Inheritance
+
 If one base class is being inherited by multiple derived classes
 A -> B, C
 
-
 ### Hybrid Inheritance
+
 When we combine two or more type of inheritance into one, then its called hybird
 
 A -> B -> C , D

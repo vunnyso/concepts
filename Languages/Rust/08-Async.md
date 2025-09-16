@@ -1,26 +1,32 @@
 <h1 style="text-align:center;"> Rust Async </p>
 
 ### 🧰 What is Tokio?
-* Tokio is runtime for writing reliable, asynchronous applications in Rust.
-* It Provides:
-  * Async Runtime
-  * Task scheduling
-  * Timers, networking, IO
+
+- Tokio is runtime for writing reliable, asynchronous applications in Rust.
+- It Provides:
+  - Async Runtime
+  - Task scheduling
+  - Timers, networking, IO
 
 ### ⚙️ How to Add Tokio
-* In `Cargo.toml` file
 
-   ```sh
-   [dependencies]
-   tokio = { version = "1", features = ["full"] }
-   ```
+- In `Cargo.toml` file
+
+  ```sh
+  [dependencies]
+  tokio = { version = "1", features = ["full"] }
+  ```
+
 ### Understanding await
-* `.await` is used **inside async function**
-* Suspends current task until awaited `Future` is ready.
-* Unlike thread::sleep, it **does not block the whole thread** - it just yields the control so that other tasks can run.
+
+- `.await` is used **inside async function**
+- Suspends current task until awaited `Future` is ready.
+- Unlike thread::sleep, it **does not block the whole thread** - it just yields the control so that other tasks can run.
 
 ### ▶️ Use of async function
-* Using tokio runtime to implement
+
+- Using tokio runtime to implement
+
   ```rust
   use tokio::time::{sleep, Duration};
 

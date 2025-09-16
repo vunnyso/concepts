@@ -1,9 +1,10 @@
 # Intermediate Programs
+
 1. [Print subsequences of given array](#Print-subsequences-of-given-array)
 2. [Print subsequences whose sum equals to k](#Print-subsequences-whose-sum-equals-to-k)
 
-
 #### 1. Print subsequences of given array
+
 ```cpp
 #include <bits/stdc++.h>
 void subSeq(std::array<int, 3> &arr, int index, int n, std::vector<int> &list)
@@ -30,6 +31,7 @@ int main()
 ```
 
 #### 2. Print any subsequence whose sum equals to k
+
 ```cpp
 #include <bits/stdc++.h>
 bool subSeqSum(std::array<int, 3> &arr, int index, int n, std::vector<int> &list, int sum, int k)

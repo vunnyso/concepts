@@ -1,6 +1,7 @@
 <h1 style="text-align:center;"> Pair </p>
 
 ## Example
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

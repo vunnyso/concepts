@@ -1,4 +1,5 @@
 # Beginner Programs
+
 - [Print linearly from 1 to `N`](#Print-linearly-from-1-to-N)
 - [Print linearly from `N` to 1](#Print-linearly-from-N-to-1)
 - [Factorial of number provided by user](#Factorial-of-number-provided-by-user)
@@ -6,6 +7,7 @@
 - [Nth Fibonacci number](#Nth-Fibonacci-number)
 
 #### Print linearly from 1 to `N`
+
 ```cpp
 void func(int i, int n)
 {
@@ -23,6 +25,7 @@ int main()
 ```
 
 #### Print linearly from `N` to 1
+
 ```cpp
 void func(int i, int n)
 {
@@ -40,6 +43,7 @@ int main()
 ```
 
 #### Factorial of number provided by user
+
 ```cpp
 int factorial(int n)
 {
@@ -56,6 +60,7 @@ int main()
 ```
 
 #### Reverse elements of array
+
 ```cpp
 void swapArray(int arr[], int left, int right)
 {
@@ -73,6 +78,7 @@ int main()
 ```
 
 #### Nth Fibonacci number
+
 ```cpp
 int fibo(int n)
 {
@@ -84,4 +90,5 @@ int main()
     std::cout << fibo(8);
 }
 ```
- Time complexity: O(2<sup>n</sup>), Space Complexity  O(2<sup>n</sup>)
+
+Time complexity: O(2<sup>n</sup>), Space Complexity O(2<sup>n</sup>)

@@ -1,6 +1,7 @@
 <h1 style="text-align:center;"> List </p>
 
 ## Implementation
+
 Implemented using doubly linked list.
 
 ```cpp

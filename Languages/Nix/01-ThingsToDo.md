@@ -3,16 +3,18 @@
 ## Follow below steps
 
 1. Enable networking so that user can ssh remotely to the system.
-    ```
-    nano /etc/nixos/configuration.nix
 
-    # Enable the OpenSSH daemon.
-    services.openssh.enable = true;
+   ```
+   nano /etc/nixos/configuration.nix
 
-    sudo nixos-rebuild switch
-    ```
+   # Enable the OpenSSH daemon.
+   services.openssh.enable = true;
+
+   sudo nixos-rebuild switch
+   ```
 
 2. Enable `nix flake`
+
    ```nix
    nix.extraOptions = ''
      experimental-features = nix-command flakes
@@ -23,16 +25,18 @@
    ```
 
 3. Start using `nix flake`
+
    ```nix
    mkdir ~/dotfiles
    cd ~/dofiles
    cp /etc/nixos/* .
    nix flake init
    ```
+
    #### Note you can keep dotfiles with scm like `git`
 
-
 4. Modify `flake.nix` generated in step 3
+
    ```nix
     {
       description = "A very basic flake";

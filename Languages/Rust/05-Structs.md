@@ -1,11 +1,13 @@
 <h1 style="text-align:center;"> Structs </p>
 
 ### Structs
-* Can have data fields, methods and associated functions.
-* Rust don't have struct inheritance.
+
+- Can have data fields, methods and associated functions.
+- Rust don't have struct inheritance.
+
 ```rust
 // Debug is trait and derive allows compiler to add basic implementaion for trait
-#[derive(Debug)] 
+#[derive(Debug)]
 struct Square { // Start Capital and camel case
     width: u8,
     height: u8,
@@ -25,13 +27,15 @@ fn main(){
 ```
 
 ### Traits
-* Similar to interfaces in other languages. Used for data abstraction
-* Tells functionality of particular type.
-* Can group method signatures togther.
-* Help in code reusability.
-* Define the required behavior.
-* We can write generic functions.
-* Implements inheritance
+
+- Similar to interfaces in other languages. Used for data abstraction
+- Tells functionality of particular type.
+- Can group method signatures togther.
+- Help in code reusability.
+- Define the required behavior.
+- We can write generic functions.
+- Implements inheritance
+
 ```rust
 trait Run {
     fn run(&self) {

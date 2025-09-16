@@ -1,14 +1,17 @@
 ## What is the Set?
-* Set are associative container in which each element has to be unique.
-* The values are in sorted order which can be either ascending or descending.
-* Internally tree is manitained.
+
+- Set are associative container in which each element has to be unique.
+- The values are in sorted order which can be either ascending or descending.
+- Internally tree is manitained.
 
 #### Syntax
+
 ```cpp
 set<data_type> set_name;
 ```
 
 ### Example
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -37,13 +40,17 @@ int main()
 ```
 
 ## 2. Time Complexity
+
 insert, erase, find make logarithmic Time O(log n)
 
 ## 3. Multiset
+
 We can use multiset<int> in case we just want to store element in sorted order and can contain duplicates.
 
 ## 3. unordered_set
+
 Stores unique elements, however order of elements can be random.
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;

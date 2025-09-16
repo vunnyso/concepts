@@ -1,13 +1,15 @@
 <h1 style="text-align:center;"> priority_queue</p>
 
 ## Features
-* Similar to queue, but element with largest value stays at the top.
-* Interally tree datastructure is maintained
-* By default it will be maximum heap
+
+- Similar to queue, but element with largest value stays at the top.
+- Interally tree datastructure is maintained
+- By default it will be maximum heap
 
 ### 1. Implemenation
 
 - **Basic Program**
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -35,8 +37,10 @@ int main()
     return 0;
 }
 ```
+
 ## 2. Complexity in Priority Queue
-| Operation | Complexity |
-| --------- | ---------- |
-| push / pop    | log(n)     |
-| top      | O(1)     |
+
+| Operation  | Complexity |
+| ---------- | ---------- |
+| push / pop | log(n)     |
+| top        | O(1)       |

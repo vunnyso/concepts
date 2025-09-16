@@ -1,22 +1,26 @@
 ### What is Heap?
-* A complete binary tree that comes with heap order property.
-* A complete binrary tree means in which all the levels are completly filled except last level, in which nodes are fill from left to right.
+
+- A complete binary tree that comes with heap order property.
+- A complete binrary tree means in which all the levels are completly filled except last level, in which nodes are fill from left to right.
 
 ## Heap Properties
+
 A heap must satisfy one of the following properties.
+
 1. **Max Heap** - Parent is greater than and equal to its children.
    <br>**Example:**<br>
-     5 <br>
-    /\ <br>
-   1  2
+   5 <br>
+   /\ <br>
+   1 2
 
 2. **Min Heap** - Paremt node is always less than or equal to its children.
    <br>**Example:**<br>
-     1 <br>
-    /\ <br>
-   2  3 
+   1 <br>
+   /\ <br>
+   2 3
 
 ## Insertion and deletion in heap
+
 ```cpp
 #include <bits/stdc++.h>
 

@@ -1,41 +1,45 @@
 <h1 style="text-align:center;"> Go Basics </p>
 
 ### 📦 1. Variables and Types
-* Variables in go can be defined using `var`
 
-   ```go
+- Variables in go can be defined using `var`
+
+  ```go
   package main
 
   import "fmt"
 
   func main() {
-    var name string = "Test"
-    age := 30
-    fmt.Println(name, age)
+   var name string = "Test"
+   age := 30
+   fmt.Println(name, age)
   }
-   ```
+  ```
 
 ### 🔢 2. Functions
-* Functions start with func.
-* Type comes after the variable name (e.g., a int)
 
-    ```go
-      package main
+- Functions start with func.
+- Type comes after the variable name (e.g., a int)
 
-      import "fmt"
+  ```go
+    package main
 
-      func add(a int, b int) int {
-         return a + b
-      }
+    import "fmt"
 
-      func main() {
-        sum := add(3,4)
-        fmt.Println("Sum is", sum)
-      }
-    ```
+    func add(a int, b int) int {
+       return a + b
+    }
+
+    func main() {
+      sum := add(3,4)
+      fmt.Println("Sum is", sum)
+    }
+  ```
 
 ### 🔢 3.Control Structures
-* Conditions and looping
+
+- Conditions and looping
+
   ```go
   package main
 
@@ -58,24 +62,28 @@
   ```
 
 ### 📚 4. Arrays and Slices
-* Arrays have fixed size; slices are dynamic.
-* Slices are used much more commonly than arrays.
-    ```go
-    package main
 
-    import "fmt"
+- Arrays have fixed size; slices are dynamic.
+- Slices are used much more commonly than arrays.
 
-    func main() {
-      var arr[3] int = [3] int {1,2, 3}
-      slice := [] int{4, 5, 6}
+  ```go
+  package main
 
-      fmt.Println("Array:", arr)
-      fmt.Println("Slice:", slice)
-    }
-    ```
+  import "fmt"
+
+  func main() {
+    var arr[3] int = [3] int {1,2, 3}
+    slice := [] int{4, 5, 6}
+
+    fmt.Println("Array:", arr)
+    fmt.Println("Slice:", slice)
+  }
+  ```
 
 ### ⚙️ 5. Concurrency with Goroutines
-* We declare Goroutines as below
+
+- We declare Goroutines as below
+
   ```go
     package main
 
@@ -94,28 +102,31 @@
     }
   ```
 
-
 ### 📦 6. Structs
-* Structs group related data together
-* Used instead of classes (Go doesn’t have classes).
-    ```go
-    package main
 
-    import "fmt"
+- Structs group related data together
+- Used instead of classes (Go doesn’t have classes).
 
-    type Person struct {
-      Name string
-      Age int
-    }
+  ```go
+  package main
 
-    func main() {
-      p := Person{Name: "Test", Age: 25}
-      fmt.Println(p.Name, p.Age)
-    }
-    ```
+  import "fmt"
+
+  type Person struct {
+    Name string
+    Age int
+  }
+
+  func main() {
+    p := Person{Name: "Test", Age: 25}
+    fmt.Println(p.Name, p.Age)
+  }
+  ```
 
 ### 🧵 7. Pointers
-* Example below
+
+- Example below
+
   ```go
   package main
 

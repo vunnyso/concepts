@@ -1,10 +1,12 @@
 <h1 style="text-align:center;"> Daemon </p>
 
 ### Daemon
-* Its thread running in background.
-* Unix concept of fire and forgot.
+
+- Its thread running in background.
+- Unix concept of fire and forgot.
 
 ### Example
+
 ```cpp
 #include <iostream>
 #include <thread>

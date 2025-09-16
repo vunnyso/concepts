@@ -1,14 +1,17 @@
 ## What is the Map?
-* Associate container which stores data in key value format, where key can be of any datastructure and will be unique.
-* Stores unique keys in sorted order.
-* Implemented array of linked list (buckets)
+
+- Associate container which stores data in key value format, where key can be of any datastructure and will be unique.
+- Stores unique keys in sorted order.
+- Implemented array of linked list (buckets)
 
 ## map syntax
+
 ```cpp
 map<key,value> map;
 ```
 
 ### Example
+
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -40,35 +43,36 @@ int main()
 }
 ```
 
-
 ## Variations
 
 1. **multimap**
-* Syntax
 
-    ```cpp
-    multimap<key,value> map;
-    ```
+- Syntax
 
-* Use of multi map
- We can store duplicate keys but everything will be in sorted order.
+  ```cpp
+  multimap<key,value> map;
+  ```
 
+- Use of multi map
+  We can store duplicate keys but everything will be in sorted order.
 
 2. **unordered_map**
-* Syntax
 
-    ```cpp
-    unordered_map<key,value> map;
-    ```
+- Syntax
 
-* Use of unordered map
- Will have unique keys but order will be randomnized.
+  ```cpp
+  unordered_map<key,value> map;
+  ```
 
------
+- Use of unordered map
+  Will have unique keys but order will be randomnized.
+
+---
 
 ## Difference
-| Unordered_map    | Map |
-| :-------- | :------- |
-| The unordered_map key can be stored in any order.	  | The map is an ordered sequence of unique keys     |
-|Unordered_Map implements an unbalanced tree structure due to which it is not possible to maintain order between the elements | Map implements a balanced tree structure which is why it is possible to maintain order between the elements (by specific tree traversal)|
-| The time complexity of unordered_map operations is O(1) on average. | The time complexity of map operations is O(log n) |
+
+| Unordered_map                                                                                                                | Map                                                                                                                                      |
+| :--------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| The unordered_map key can be stored in any order.                                                                            | The map is an ordered sequence of unique keys                                                                                            |
+| Unordered_Map implements an unbalanced tree structure due to which it is not possible to maintain order between the elements | Map implements a balanced tree structure which is why it is possible to maintain order between the elements (by specific tree traversal) |
+| The time complexity of unordered_map operations is O(1) on average.                                                          | The time complexity of map operations is O(log n)                                                                                        |

@@ -40,8 +40,9 @@ int main()
 ### 2. Bubble Sort - Time complexity O(n^2)
 
 - **Push maximum to the last by adjacent swaps**
-- **Time complexity O(n^2) for worst,average case and  O(n) best case**
+- **Time complexity O(n^2) for worst,average case and O(n) best case**
 - **Space complexity 0(1)**
+
 ```cpp
 #include <bits/stdc++.h>
 
@@ -79,11 +80,12 @@ int main()
 
 ```
 
-### 3. Insertion Sort  - Time complexity O(n^2)
+### 3. Insertion Sort - Time complexity O(n^2)
 
 - **Takes element and places it in its correct order**
-- **Time complexity O(n^2) for worst,average case and  O(n) best case**
+- **Time complexity O(n^2) for worst,average case and O(n) best case**
 - **Space complexity 0(1)**
+
 ```cpp
 #include <bits/stdc++.h>
 

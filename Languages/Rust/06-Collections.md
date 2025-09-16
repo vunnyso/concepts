@@ -1,7 +1,9 @@
 <h1 style="text-align:center;"> Collections </p>
 
 ### Vectors
-* Its generic collection that holds a bunch of one type.
+
+- Its generic collection that holds a bunch of one type.
+
 ```rust
 fn main() {
     let mut v: Vec<i32> = Vec::new();
@@ -29,23 +31,28 @@ fn main() {
 ```
 
 ### Strings
+
 - Two major types
+
 1. Borrowed string slice &str - Allocated on stack
 2. String can be modified - Allocated on heap.
 
-* Strings cannot be indexed by character position
-* Pushing things on stack is faster than allocating things on heap
-* Graphemes decompose into variables amounts of scalers, which decompose into variable amounts of bytes.
+- Strings cannot be indexed by character position
+- Pushing things on stack is faster than allocating things on heap
+- Graphemes decompose into variables amounts of scalers, which decompose into variable amounts of bytes.
+
 ```rust
 let msg = "abc".to_string();
 let msg = String::from("abc");
 ```
 
 ### Hashmap
-* Its generic collection where you specify type for key and type for value.
-* Access values by the key.
-* In some languages its called dictonary.
-* Insert, lookup and remove values in constant time.
+
+- Its generic collection where you specify type for key and type for value.
+- Access values by the key.
+- In some languages its called dictonary.
+- Insert, lookup and remove values in constant time.
+
 ```rust
 use std::collections::HashMap;
 fn main(){
@@ -58,7 +65,8 @@ fn main(){
 ```
 
 ### Others
-1. VecDeque -  Use ring buffer to implement double-ended queue, efficently add and remove items.
+
+1. VecDeque - Use ring buffer to implement double-ended queue, efficently add and remove items.
 2. LinkedList - Add and remove items at arbitrary pint in the list.
 3. HashSet - Hashing implemenation of a set. Performs set operations efficently.
 4. Binary heap - Its like priority queue which always pops up max value.

@@ -1,9 +1,11 @@
 <h1 style="text-align:center;"> Rust Logging </p>
 
 ### Debug Logs
+
 In `Rust` debug logs are typically handled using `log` crate along with `logging` backend like `env_logger` , `tracking` and `fern`
 
 1. Add dependencies to `Cargo.toml`
+
 ```toml
 [dependencies]
 log = "0.4"
@@ -11,6 +13,7 @@ env_logger = "0.11"
 ```
 
 2. Initalize logging in `main.rs`
+
 ```rust
 use log::{debug, info, warn, error};
 

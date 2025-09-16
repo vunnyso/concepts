@@ -1,6 +1,20 @@
 <h1 style="text-align:center;"> i915 Basics</p>
 
-## How to find Graphics memory
+## 🖥️ Step 1 — Identify Your GPU
+
+Run
+
+```bash
+# lspci -nn | grep -i 'vga\|3d\|display'
+```
+
+### Default Parameters
+
+```bash
+ls /sys/module/i915/parameters/
+```
+
+## How to find Graphics memory used
 
 ```bash
 $ sudo cat /sys/kernel/debug/dri/0/i915_gem_objects

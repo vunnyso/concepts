@@ -1,17 +1,19 @@
 <h1 style="text-align:center;"> Bluetooth</p>
 
 ## GATT
+
 GATT stands for Generic Attribute Profile, and it’s one of the core components of Bluetooth Low Energy (BLE) communication.
 
 🔍 In simple terms:
 
-* GATT defines how two BLE devices exchange data.
-* It operates on top of ATT (Attribute Protocol), which organizes data into attributes.
-* GATT allows devices to discover and use services and characteristics provided by other BLE devices.
-
+- GATT defines how two BLE devices exchange data.
+- It operates on top of ATT (Attribute Protocol), which organizes data into attributes.
+- GATT allows devices to discover and use services and characteristics provided by other BLE devices.
 
 ## 🔎 1. Identify the Bluetooth device
+
 Run:
+
 ```bash
 hciconfig
 ```
@@ -27,17 +29,21 @@ hci0:   Type: Primary  Bus: USB
 ```
 
 ## 🔎 2. Get detailed adapter information
+
 ```bash
 hciconfig hci0 -a
 ```
 
 ## 📢 3. Check connected device HOGP support
+
 ```bash
 sudo btmon
 ```
 
 ### 4. Debugging Tips
+
 a. Enable debug logs for `bluetoothd` which usually be running as systemd service
+
 ```
   systemd.services.greetd.serviceConfig = {
     Execstart = lib.mkForce [
@@ -47,6 +53,7 @@ a. Enable debug logs for `bluetoothd` which usually be running as systemd servic
 ```
 
 b. Check bluetooth control details
+
 ```
 bluetoothctl info
 bluetoothctl show

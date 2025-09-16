@@ -55,6 +55,7 @@ int main()
 - **Divide and merge**
 - **Time complexity O(n log(n)) for average,best case and O(n^2) for worst case**
 - **Space complexity O(log(n))**
+
 ```cpp
 #include <bits/stdc++.h>
 

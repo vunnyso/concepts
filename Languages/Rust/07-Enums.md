@@ -1,7 +1,9 @@
 <h1 style="text-align:center;"> Enums </p>
 
 ### Overview
-* Like algebraic Data types.
+
+- Like algebraic Data types.
+
 ```rust
 #[derive(Debug)]
 enum Color {
@@ -30,14 +32,17 @@ fn main() {
 }
 ```
 
-* Option enums
+- Option enums
+
 ```rust
 enum Option<T> { //Option is used when something might be absent
     Some<T>,
     None,
 }
 ```
+
 Example
+
 ```rust
 fn main() {
     let mut x:Option<i32> = None; // Already included in standard prelude
@@ -53,9 +58,11 @@ fn main() {
 }
 ```
 
-### Result Enum or  Error Handling
-* Check if result have something useful or have error
-* Used in io module
+### Result Enum or Error Handling
+
+- Check if result have something useful or have error
+- Used in io module
+
 ```rust
 #[must_use] // Annotation make compiler warning to silently drop
 enum Result<T, E> {
@@ -63,7 +70,9 @@ enum Result<T, E> {
     Err(E),
 }
 ```
+
 Example
+
 ```rust
 use std::fs::File;
 fn  main() {
@@ -79,6 +88,7 @@ fn  main() {
 ```
 
 Error Handling
+
 ```rust
   fn divide(x: f64, y: f64) -> Result<f64, String> {
     if y == 0.0 {
@@ -99,8 +109,10 @@ Error Handling
 ```
 
 ### Match expression
-* Similar to switch case
-* Match expression are exhaustive, we need to match all possible values.
+
+- Similar to switch case
+- Match expression are exhaustive, we need to match all possible values.
+
 ```rust
 fn main() {
     enum  Direction {

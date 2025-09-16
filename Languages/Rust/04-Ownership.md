@@ -1,11 +1,13 @@
 <h1 style="text-align:center;"> Ownership & References </p>
 
 ### Rules
+
 1. Each value has an owner
 2. Only one owner of value
 3. Values gets dropped if its owner goes out of scope. (Destructor called, free heap, stack pop)
 
 Example
+
 ```rust
 fn main() {
     // s1 will have ptr, value, capacity assoicated with it in stack and ptr location will be from heap
@@ -23,12 +25,14 @@ fn main() {
 ```
 
 ### Paramters passing to function
-* Integers are copied
-* In below example once we pass s1, its ownership will be moved to function
-* We need to make s1 first mutable
-* Return value from function using tail expression
-* Then assign it back to s1
-* Usually its not good way, that's why will use references & borrowing
+
+- Integers are copied
+- In below example once we pass s1, its ownership will be moved to function
+- We need to make s1 first mutable
+- Return value from function using tail expression
+- Then assign it back to s1
+- Usually its not good way, that's why will use references & borrowing
+
 ```rust
 fn main() {
     let mut s1 = String::from("abc");
@@ -47,12 +51,15 @@ fn makes_copy(x : i32) {
     println!("Value {}", x);
 }
 ```
+
 ### References
-* If you have variable x, then &x creates reference to it
-* If you have variable x, then &mut x creates mutable reference to it
-* We can have any number of immutable references.
-* We can only one mutable reference. It helps to prevent data races at compile time.
-* You cannot have mutable reference when imutable reference exists.
+
+- If you have variable x, then &x creates reference to it
+- If you have variable x, then &mut x creates mutable reference to it
+- We can have any number of immutable references.
+- We can only one mutable reference. It helps to prevent data races at compile time.
+- You cannot have mutable reference when imutable reference exists.
+
 ```rust
 fn main() {
     let s1 = String::from("abc");
@@ -65,8 +72,8 @@ fn do_stuff(s: &String) -> String {
 }
 ```
 
-
 ### Slices
+
 ```rust
 fn main() {
    let s = String::from("Hello World");
