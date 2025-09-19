@@ -58,13 +58,13 @@ go get [project-url]
 go get github.com/gvalkov/golang-evdev
 ```
 
-
 ### Other usefull go commands:
-| Command | Description |
-| :------------ |  :--------------------------------------------------- |
-| go build      | Compiles bunch of go source code files |
-| go run      | Compiles and executes one or two files |
-| go fmt      | Fromats all the code in each file in the current directory |
-| go install      | Compiles and install a package |
-| go get     | Downloads the raw source code of someone else package |
-| go test      | Run any tests associated with the current project |
+
+| Command    | Description                                                |
+| :--------- | :--------------------------------------------------------- |
+| go build   | Compiles bunch of go source code files                     |
+| go run     | Compiles and executes one or two files                     |
+| go fmt     | Fromats all the code in each file in the current directory |
+| go install | Compiles and install a package                             |
+| go get     | Downloads the raw source code of someone else package      |
+| go test    | Run any tests associated with the current project          |
