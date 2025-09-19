@@ -7,7 +7,7 @@
 
 ```rust
 fn main() {
-    let add = | x ,  y | { x + y}; // Closure defined
+    let add = | x ,  y | { x + y }; // Closure defined
     println!("Add result {}" , add(1, 2));
 }
 ```

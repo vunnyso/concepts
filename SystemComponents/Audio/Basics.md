@@ -1,6 +1,6 @@
 <h1 style="text-align:center;"> Linux Audio</p>
 
-## Audio Architecture
+### Audio Architecture
 
 The Linux audio architecture is a complex system that involves multiple components and layers. Here's an overview of the main components:
 
@@ -24,7 +24,11 @@ The Linux audio architecture is a complex system that involves multiple componen
 5. OSS (Open Sound System) [Deprecated]
    - Older sound system, replaced by ALSA.
 
-## Managing Audio in Linux
+<br>
+
+---
+
+### Managing Audio in Linux
 
 1. Check and List Audio Devices
    - ALSA
@@ -47,3 +51,12 @@ The Linux audio architecture is a complex system that involves multiple componen
      ```
      pw-cli ls Node
      ```
+
+### Checking default source and sinks using PulseAudio
+
+- The default sink (default_sink_name) changes only if you explicitly change the default device in PulseAudio.
+
+  ```bash
+  pactl get-default-sink
+  pactl get-default-source
+  ```

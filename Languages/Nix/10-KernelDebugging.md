@@ -17,7 +17,7 @@ boot.kernelPatches = [
 ];
 ```
 
-### Use custom Kernel
+### Use Custom Repo Kernel
 
 ```nix
 boot.kernelPackages =
@@ -28,17 +28,16 @@ boot.kernelPackages =
         buildLinux (
         args
         // rec {
-            version = "6.17.0-rc6";
-
-            src = fetchgit {
-            url = "https://anongit.freedesktop.org/git/drm-tip.git/";
-            rev = "e9c137c33746d8007daa202af67b6aefd18a0121";
-            sha256 = "sha256-tNPtVfzvrWKkBy43445zfo/te2FPDkaf1Wuj/3xZ3BI=";
-            };
-        # structuredExtraConfig = with lib.kernel; {
-        #   NF_CT_PROTO_DCCP = lib.mkForce no;
-        # };
-        ignoreConfigErrors = true;
+                version = "6.17.0-rc6";
+                src = fetchgit {
+                url = "https://anongit.freedesktop.org/git/drm-tip.git/";
+                rev = "e9c137c33746d8007daa202af67b6aefd18a0121";
+                sha256 = "sha256-tNPtVfzvrWKkBy43445zfo/te2FPDkaf1Wuj/3xZ3BI=";
+              };
+            # structuredExtraConfig = with lib.kernel; {
+            #   NF_CT_PROTO_DCCP = lib.mkForce no;
+            # };
+            ignoreConfigErrors = true; # not necessarily a good idea
         }
         // (args.argsOverride or { })
 
@@ -47,3 +46,29 @@ boot.kernelPackages =
     in
     pkgs.recurseIntoAttrs (pkgs.linuxPackagesFor linux_6-17-0);
 ```
+
+### Use Kernel mirror
+
+```nix
+boot.kernelPackages = pkgs.linuxPackagesFor (pkgs.linuxKernel.kernels.linux_6_11.override {
+    argsOverride = rec {
+    src = pkgs.fetchurl {
+        url = "mirror://kernel/linux/kernel/v${lib.versions.major version}.x/linux-${version}.tar.xz";
+        sha256 = "sha256-YhSOfhf1TEpateda1IgmgsVL7oGJSL5hpZYyNPwISfw=";
+    };
+        version = "6.11.11";
+        modDirVersion = "6.11.11";
+    };
+});
+```
+
+### Use LTS Kernel
+
+```nix
+boot.kernelPackages = pkgs.linuxPackages_6_6;
+boot.kernelPackages = pkgs.linuxPackages_6_12;
+```
+
+### References:
+
+https://cdn.kernel.org/pub/linux/kernel/v6.x/
