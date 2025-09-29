@@ -17,11 +17,12 @@ int main() {
   using namespace std;
   // Scalar types
   int a, b, c;
+  unsigned int d = 1; // e is l-value(locator value) refers to memory location and 1 is the r-value(right value)
   float x;
   bool y = true; // Can 0 or non-zero value, however recommeneded be either true
                  // or false
   float z = 3.14f;
-  double d = 123.456;
+  double e = 123.456;
 
   // Vector types
   int arr[3];

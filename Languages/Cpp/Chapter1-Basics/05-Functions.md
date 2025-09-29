@@ -22,14 +22,23 @@
 <return type> <name> (<parameters>){<body>}
 ```
 
+### Default Function Arguments
+
+- Allows some or all function arguments to have a default value
+- It becomes optional to pass values to those arguments
+  - Compiler automatically assigns default value if no explicit value is provided
+  - Explicit value is preferred over default value
+- Default arguments should begin from the right side in the list of function arguments
+- Simplifies the invocation for the caller
+
 **Example**
 
 ```cpp
 #include <iostream>
 
-int Add(int x, int y); // Prototype or declartion
+int Add(int x, int y, int z); // Prototype or declartion
 
 int main() { std::cout << "Result of two number addition is " << Add(10, 20); }
 
-int Add(int x, int y) { return x + y; }
+int Add(int x, int y, int z = -1) { return x + y; }
 ```
