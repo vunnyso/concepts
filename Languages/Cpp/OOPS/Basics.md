@@ -1,24 +1,6 @@
-### Charateristics / Properties
-
-1. Class & Object
-2. Encapsulation
-3. Polymorphism
-4. Inheritance
-
-### Class and object
-
-- Its user defined data type, which holds its own data members and member functions.
-- Object is instance of class.
-- Helps in code reusbality
-
 ### This keyword
 
 - This pointer is a pointer to current instance of the class.
-- Used when instance variable and local variables are with same name.
-
-### Encapsulation
-
-Wrapping varaibles and functions in class. Helps in data hiding.
 
 ### Polymorphism
 
@@ -101,8 +83,6 @@ int main() {
 5. Virtual table will have function pointer and its static arrays. All objects pointer to same vtable.
 
 ### Inheritance
-
-The capability of a class to derive properties and characteristics from another class.
 
 ### Inheritance
 

@@ -49,6 +49,8 @@ print(0 & 5 | 10)
 print(10 < 20 < 30) --> Output is True
 ```
 
+**Problem**
+
 ```
 x = {1, 2, 3} y = {3, 2, 1} print(x == y)
 ```
@@ -56,4 +58,31 @@ x = {1, 2, 3} y = {3, 2, 1} print(x == y)
 <details output>
   <summary>Output</summary>
   True
+</details>
+
+<br>
+
+**Problem**
+
+```
+x = [i**2 for i in range(4)]
+print(x)
+```
+
+<details output>
+  <summary>Output</summary>
+[0, 1, 4, 9]
+</details>
+
+<br>
+
+**Problem**
+
+```python
+print(True == 1 == 2)
+```
+
+<details output>
+  <summary>Output</summary>
+False
 </details>

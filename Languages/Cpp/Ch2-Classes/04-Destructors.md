@@ -1,3 +1,5 @@
+<h1 style="text-align:center;"> Destructor </p>
+
 ### What is destructor?
 
 - Used to destory object, once object goes out of scope
@@ -34,6 +36,5 @@ class demo {
 int main()
 {
     demo obj, obj2;
-    {demo obj3;}
 }
 ```
