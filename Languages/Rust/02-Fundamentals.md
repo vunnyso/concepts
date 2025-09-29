@@ -68,6 +68,31 @@ fn do_stuff(x: f64, y: f64) -> f64 { // use small case with underscores
 - But specifiying absolute path at every call site can be painful, so `use` statement can be helpful.
 - `use` - Bring item from some path into some scope, similar to import
 
+### Imports
+
+- In Rust, imports refer to explicitly bringing external crates, modules, functions, structs, enums, or other items into the scope of your program.
+- Imports are done using the `use` keyword.
+- Syntax
+  ```rust
+  use crate_name::item_name;
+  ```
+
+### Prelude
+
+- The Prelude in Rust refers to a set of items (typically functions, traits, and types) that are automatically brought into scope by the Rust compiler for every Rust program.
+- These are items that the Rust language assumes you'll commonly need, so they’re made available by default. You don't need to import them manually in your program.
+- Example
+  ```rust
+  fn main() {
+      // `println!` is part of the prelude, so it works without `use`
+      println!("Hello, world!");
+  }
+  ```
+- It includes commonly used traits, types, and macros such as:
+  - **Types:** Option, Result, Vec, String, etc.
+  - **Traits:** Clone, Copy, Debug, Drop, etc.
+  - **Macros:** println!, format!, vec!, etc.
+
 ### Crates
 
 - Package registry
