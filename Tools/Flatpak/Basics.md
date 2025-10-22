@@ -2,8 +2,10 @@
 
 ### Overview
 
-- Flatpak is a system for building, distributing, and running sandboxed desktop applications on Linux.
-  -Its universal package
+- Flatpak is a universal package system for Linux.
+- It allows you to install and run applications in a sandboxed and distribution-independent way.
+- Flatpak app can run on Ubuntu, Fedora, Arch, Debian, or any other distro
+- Flatpak is like an "App Store" system for Linux, but open-source and cross-distro
 
 ### Features
 
@@ -27,12 +29,27 @@
 ### Usage
 
 ```bash
-$ flatpak search firefox
-$ flatpak install flathub org.mozilla.firefox
-$ flatpak --user install flathub org.mozilla.firefox
-$ flatpak uninstall org.mozilla.firefox
+# Add Flathub repo (once)
+$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Search apps with specific name
+$ flatpak search discord
+
+$ flatpak install flathub com.discordapp.Discord
+$ flatpak --user install flathub com.discordapp.Discord
+
+# List installed apps
+$ flatpak list
+
+# Run app
+$ flatpak run com.discordapp.Discord
+
+# Uinstall apps
+$ flatpak uninstall com.discordapp.Discord
+$ flatpak uninstall --unsed # Delete unsed runtimes
+
 $ flatpake update
-$ flatpak uninstall --unsed // Delete unsed runtimes
+
 ```
 
 ### Reference

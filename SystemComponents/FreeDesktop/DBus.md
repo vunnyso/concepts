@@ -55,3 +55,13 @@ dbus-monitor --system
 ```bash
 dbus-monitor --session "type='signal',interface='org.ghaf.Audio'"
 ```
+
+### gdbus
+
+- gdbus is a command-line tool used to interact with the D-Bus message bus system, specifically through GIO’s D-Bus API (part of the GNOME GLib library)
+- Example
+  ```bash
+  gdbus introspect --system \
+  --dest org.freedesktop.PackageKit \
+  --object-path /org/freedesktop/PackageKit
+  ```
