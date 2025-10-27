@@ -26,3 +26,47 @@
    - Used for dynamic memory allocation
    - End of BSS segment and grows towards higher addrress.
    - Heap area managed by malloc, realloc, free, brk, sbrk system calls.
+
+# Memory Layout of a Process
+
+```md
+High Address
+↑
+│
+│ ┌───────────────────────────────────────────┐
+│ │ Stack │
+│ │-------------------------------------------│
+│ │ • Contains function call frames │
+│ │ • Local variables │
+│ │ • Command-line args & env variables │
+│ └───────────────────────────────────────────┘
+│ ↓ ↑
+│ ┌───────────────────────────────────────────┐
+│ │ Heap │
+│ │-------------------------------------------│
+│ │ • Dynamically allocated memory │
+│ │ (malloc, new, etc.) │
+│ └───────────────────────────────────────────┘
+│ ┌───────────────────────────────────────────┐
+│ │ Uninitialized Data (BSS) │
+│ │-------------------------------------------│
+│ │ • Global & static variables │
+│ │ not initialized by the programmer │
+│ │ • Initialized to zero at runtime │
+│ └───────────────────────────────────────────┘
+│ ┌───────────────────────────────────────────┐
+│ │ Initialized Data │
+│ │-------------------------------------------│
+│ │ • Global & static variables │
+│ │ initialized by the programmer │
+│ │ • Read from program file │
+│ └───────────────────────────────────────────┘
+│ ┌───────────────────────────────────────────┐
+│ │ Text │
+│ │-------------------------------------------│
+│ │ • Executable code (machine instructions) │
+│ │ • Read-only segment │
+│ └───────────────────────────────────────────┘
+↓
+Low Address
+```

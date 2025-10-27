@@ -21,7 +21,7 @@ Its a protocol in which CPU steadily checks whether the device needs attention.
 - NMI - Non maskable interrupts for non recoverable hardware errors.
 - NMI will bypass PIC and goes to CPU differently.
 
-## Advanced Programmable Interruot controller
+## Advanced Programmable Interrupt controller
 
 - Contains routing table.
 - We I/O APIC for external interuupts.

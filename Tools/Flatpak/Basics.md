@@ -29,8 +29,10 @@
 ### Usage
 
 ```bash
+# Remote commands
 # Add Flathub repo (once)
 $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+$ flatpak remotes
 
 # Search apps with specific name
 $ flatpak search discord
